@@ -1,4 +1,8 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-pnpx --no -- commitlint --edit $1
+PGKMAN=npx
+
+source .husky/helper/get_pgkman.sh
+
+${PGKMAN} --no -- commitlint --edit $1
