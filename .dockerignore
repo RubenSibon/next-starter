@@ -1,0 +1,11 @@
+.dockerignore
+.git
+.husky
+.eslint*
+*.d.ts
+*.lock
+*-lock.*
+*config.*
+Dockerfile
+Dockerfile.dev
+node_modules
