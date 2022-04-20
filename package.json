@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test:unit": "jest",
-    "test:unit:watch": "jest --watchAll",
+    "test:unit": "jest --watchAll",
     "test:e2e": "playwright test",
     "test": "gosub test:unit && gosub test:e2e",
     "prepare": "husky install"
