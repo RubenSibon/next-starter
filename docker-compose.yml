@@ -1,0 +1,14 @@
+version: "3"
+
+name: next-starter
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - /app/node_modules
+      - .:/app
