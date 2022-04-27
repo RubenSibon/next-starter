@@ -1,6 +1,4 @@
-// @ts-ignore
 import type { PlaywrightTestConfig } from "@playwright/test";
-// @ts-ignore
 import { devices } from "@playwright/test";
 
 /**
@@ -14,6 +12,8 @@ import { devices } from "@playwright/test";
  */
 const config: PlaywrightTestConfig = {
   testDir: "./tests/playwright",
+  testIgnore: ["**/?(*.)jest.[jt]s?(x)"],
+  testMatch: ["**/?(*.)e2e.[jt]s"],
   /* Maximum time one test can run for. */
   timeout: 3 * 100 * 100,
   expect: {
@@ -100,7 +100,7 @@ const config: PlaywrightTestConfig = {
   /* Run your local dev server before starting the tests */
   webServer: {
     reuseExistingServer: true,
-    command: "pnpm build && pnpm start",
+    command: "npm build && npm start",
     port: 3000,
   },
 };

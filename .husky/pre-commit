@@ -6,5 +6,5 @@ PGKMAN=npx
 source .husky/helper/get_pgkman.sh
 
 ${PGKMAN} lint-staged
-${PGKMAN} jest --watch=false
+${PGKMAN} jest --watch=false --passWithNoTests
 ${PGKMAN} playwright test --project chromium
