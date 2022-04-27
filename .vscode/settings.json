@@ -1,0 +1,14 @@
+{
+	"workbench.colorCustomizations": {
+		"titleBar.activeBackground": "#1983ff",
+		"statusBar.background": "#ed5760",
+		"titleBar.inactiveBackground": "#000000",
+		"titleBar.inactiveForeground": "#FFFFFF"
+	},
+	"editor.formatOnSave": true,
+	"eslint.alwaysShowStatus": true,
+	"files.eol": "\n",
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"editor.insertSpaces": true,
+	"editor.tabSize": 2
+}
