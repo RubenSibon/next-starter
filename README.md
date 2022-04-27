@@ -34,8 +34,14 @@ To run the development server inside a Docker container do:
 
 ```sh
 docker build -f Dockerfile.dev -t RubenSibon/next-starter:dev .
-
 docker run -p 3000:3000 --name next-starter-dev RubenSibon/next-starter:dev
+```
+
+Or use Docker Compose to run the `dev` server and the `jest` test suite:
+
+```sh
+docker compose -f dockerp-compose.dev.yml build
+docker compose -f dockerp-compose.dev.yml up
 ```
 
 Go to: [Check out the app running in dev mode](#check-out-the-app-running-in-dev-mode)
@@ -66,8 +72,14 @@ To run the production build inside a Docker container do:
 
 ```sh
 docker build -t RubenSibon/next-starter:latest .
-
 docker run -p 3000:3000 --name next-starter RubenSibon/next-starter:latest
+```
+
+Or use Docker Compose:
+
+```sh
+docker compose build
+docker compose up
 ```
 
 ## Quality assurance
