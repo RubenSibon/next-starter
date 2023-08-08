@@ -22,7 +22,7 @@
     "typescript": "^4.6.3"
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.2.3",
+    "@commitlint/cli": "^17.6.1",
     "@commitlint/config-conventional": "^16.2.1",
     "@playwright/test": "^1.27.1",
     "@testing-library/jest-dom": "^5.16.4",
@@ -42,7 +42,7 @@
     "husky": "^7.0.4",
     "jest": "^27.5.1",
     "jest-styled-components": "^7.0.8",
-    "lint-staged": "^12.3.8",
+    "lint-staged": "^13.2.1",
     "react-is": "^18.0.0"
   },
   "browserslist": {
